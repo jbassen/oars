@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" style="height:100%; width:100%; margin:0px; padding:0px">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Open OARS</title>
+        <link rel="stylesheet" type="text/css" href="/static/lib/normalize.css">
+        <script type="text/javascript" src="/static/lib/d3.js"></script>
+        <script type="text/javascript" src="/static/lib/lodash.js"></script>
+    </head>
+
+    <body>
+        <script type="text/javascript">
+            var page_data = {% raw json_encode(page_data) %}
+        </script>
+        <script type="text/javascript" src="/static/scripts/{% raw page_script %}.js"></script>
+    </body>
+
+</html>

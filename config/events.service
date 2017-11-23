@@ -1,0 +1,28 @@
+[Unit]
+Description=tornado web server
+
+
+[Service]
+User=oars
+Group=oars
+Restart=on-failure
+ExecStart=/home/oars/events_env/bin/python3 /home/oars/oars_code/Events/__main__.py
+KillMode=process
+PrivateTmp=true
+Environment=TORNADO_PORT=4430
+Environment=CERT_FILE=/etc/ssl/oars.crt
+Environment=KEY_FILE=/etc/ssl/oars.key
+Environment=LOG_PATH=/home/oars/logs/Events
+Environment=MONGO1_ADDR=<PRIVATE_IP>
+Environment=MONGO2_ADDR=<PRIVATE_IP>
+Environment=MONGO3_ADDR=<PRIVATE_IP>
+Environment=MONGO_PORT=27017
+Environment=MONGO_USR=<EVENTS_USR>
+Environment=MONGO_PWD=<EVENTS_PWD>
+Environment=MONGO_RS=oars
+Environment=LAGUNITA_EVENT_KEY=<MUST MATCH KEY IN LAGUNITA>
+Environment=LAGUNITA_EVENT_SECRET=<MUST MATCH SECRET IN LAGUNITA>
+
+
+[Install]
+WantedBy=multi-user.target

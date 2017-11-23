@@ -1,0 +1,24 @@
+[Unit]
+Description=bktf modeling service
+
+
+[Service]
+User=oars
+Group=oars
+ExecStart=/home/oars/bktf_env/bin/python3 /home/oars/code/BKTF/__main__.py
+KillMode=process
+PrivateTmp=true
+Environment=CERT_FILE=/etc/ssl/oars.crt
+Environment=KEY_FILE=/etc/ssl/oars.key
+Environment=LOG_PATH=/home/oars/logs/BKTF
+Environment=MONGO1_ADDR=<PRIVATE_IP>
+Environment=MONGO2_ADDR=<PRIVATE_IP>
+Environment=MONGO3_ADDR=<PRIVATE_IP>
+Environment=MONGO_PORT=27017
+Environment=MONGO_USR=<BKTF_USR>
+Environment=MONGO_PWD=<BKTF_PWD>
+Environment=MONGO_RS=oars
+
+
+[Install]
+WantedBy=multi-user.target
