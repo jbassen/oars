@@ -42,7 +42,8 @@ server {
 server {
         listen 443 ssl http2;
         listen [::]:443 ssl http2;
-        include snippets/<YOUR_TLD>.conf;        include snippets/ssl-params.conf;
+        include snippets/<YOUR_TLD>.conf;
+        include snippets/ssl-params.conf;
         server_name <YOUR_TLD>;
 
         location ~ /.well-known {
