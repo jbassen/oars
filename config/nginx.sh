@@ -28,7 +28,6 @@ sudo vim /etc/nginx/snippets/ssl-params.conf
 sudo vim /etc/nginx/sites-available/default
 # paste in default (with changes specific to your configuration)
 
-# ONLY FOR oarsN1...
 sudo apt-get install letsencrypt -y
 # ASSIGN FLOATING IP FOR <YOUR_TLD> TO THIS SERVER!!!
 sudo letsencrypt certonly --webroot -w /var/www/html/ -d <YOUR_TLD> -d www.<YOUR_TLD>
