@@ -1,3 +1,5 @@
+Copyright (c) 2017 Jonathan Bassen, Stanford University
+
 OVERVIEW
 
 Welcome to OARS
@@ -36,3 +38,24 @@ NOTE: Each of these instruction (.sh) files starts with a user and firewall setu
 5) Set up the BKTF service: described in config/bktf.sh
 6) Set up the Site service: described in config/site.sh
 7) Set up Lagunita to authenticate for OARS and serve events for OARS
+
+
+DEPENDENCIES
+
+From apt-get:
+python3-pip
+mongodb-org
+nginx
+letsencrypt
+
+From pip3:
+virtualenv
+tornado
+motor
+
+From npm:
+d3
+lodash
+
+Misc:
+normalize.css

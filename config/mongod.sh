@@ -1,3 +1,5 @@
+# Copyright (c) 2017 Jonathan Bassen, Stanford University
+
 adduser oars
 usermod -aG sudo oars
 cd /etc/ssl/

@@ -1,3 +1,5 @@
+# Copyright (c) 2017 Jonathan Bassen, Stanford University
+
 from activity_text import ActivityTextHandler
 from course import CourseHandler
 from home import HomeHandler

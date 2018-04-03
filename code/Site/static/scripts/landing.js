@@ -1,3 +1,4 @@
+// Copyright (c) 2017 Jonathan Bassen, Stanford University
 var body = d3.select("body")
     .style("margin", "0px")
     .style("padding", "0px")

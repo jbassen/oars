@@ -1,3 +1,5 @@
+# Copyright (c) 2017 Jonathan Bassen, Stanford University
+
 import tornado.escape as escape
 import tornado.web as web
 

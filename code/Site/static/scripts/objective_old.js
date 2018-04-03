@@ -1,3 +1,4 @@
+// Copyright (c) 2017 Jonathan Bassen, Stanford University
 local_uri
 = "/" + page_data["platform"]
 + "/" + encodeURIComponent(page_data["course_name"])

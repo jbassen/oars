@@ -1,3 +1,5 @@
+# Copyright (c) 2017 Jonathan Bassen, Stanford University
+
 import tornado.web as web
 
 class BaseHandler(web.RequestHandler):

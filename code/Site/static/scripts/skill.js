@@ -1,3 +1,4 @@
+// Copyright (c) 2017 Jonathan Bassen, Stanford University
 local_uri
 = "/" + page_data["platform"]
 + "/" + encodeURIComponent(page_data["course_name"])
@@ -281,5 +282,3 @@ var activity_last = activity.append("div")
         n_attempted = d["attempted"]
         return "correct on last attempt: " + n_last + " / " + n_attempted;
     })
-
-

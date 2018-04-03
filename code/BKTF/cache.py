@@ -1,3 +1,5 @@
+# Copyright (c) 2017 Jonathan Bassen, Stanford University
+
 from collections import defaultdict
 import datetime
 import tornado.gen as gen

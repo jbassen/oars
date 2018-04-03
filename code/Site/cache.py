@@ -1,3 +1,5 @@
+# Copyright (c) 2017 Jonathan Bassen, Stanford University
+
 from collections import defaultdict
 import datetime
 import tornado.gen as gen
@@ -105,4 +107,3 @@ def update_bktf_states(mc, cache):
         = bktf_state
         cache['bktf_states_insertstamp'] \
         = max(cache['bktf_states_insertstamp'], bktf_state['insertstamp'])
-

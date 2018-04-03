@@ -1,3 +1,5 @@
+# Copyright (c) 2017 Jonathan Bassen, Stanford University
+
 import tornado.gen as gen
 import tornado.web as web
 import urllib.parse as parse

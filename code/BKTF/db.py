@@ -1,3 +1,5 @@
+# Copyright (c) 2017 Jonathan Bassen, Stanford University
+
 import motor.motor_tornado as motor_tornado
 import logging
 import os
